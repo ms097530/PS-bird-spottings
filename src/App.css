@@ -1,19 +1,33 @@
-.App {
-  text-align: center;
+*
+{
+  margin: 0;
 }
 
-.App-logo {
+.App
+{
+  background-color: rgb(8, 85, 34);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-logo
+{
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+@media (prefers-reduced-motion: no-preference)
+{
+  .App-logo
+  {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.App-header
+{
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +38,63 @@
   color: white;
 }
 
-.App-link {
+.App-link
+{
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
+@keyframes App-logo-spin
+{
+  from
+  {
     transform: rotate(0deg);
   }
-  to {
+
+  to
+  {
     transform: rotate(360deg);
   }
+}
+
+.App__header
+{
+  padding: 1rem;
+  color: rgb(235, 227, 227);
+}
+
+.App__body
+{
+  flex: 1;
+  background-color: beige;
+}
+
+.Dashboard
+{
+  padding: 1rem;
+}
+
+.DashboardData__card
+{
+  color: rgb(235, 227, 227);
+  background-color: rgb(8, 85, 34);
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.BirdInfo
+{
+  color: rgb(235, 227, 227);
+  background-color: rgb(8, 85, 34);
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.DashboardData__card-container
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
